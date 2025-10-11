@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 2</title>
+    <style>
+        th, td {
+            border: 1;
+            padding: 0px;
+            text-align: center;
+	    font-weight:normal;
+        }
+        .judul-tabel {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body font-family= "time-new-roman" >
+    <table border="1" align="center" style="width:40%; margin:auto;">
+        <tr>
+            <td colspan="10" class="judul-tabel">
+		Absensi Mahasiswa Teknik Informatika
+	    </td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">NO</th>
+            <th rowspan="3">NPM</th>
+            <th rowspan="3">NAMA</th>
+            <th colspan="7">PERTEMUAN</th>
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+        </tr>
+            <th>9-Feb</th>
+            <th>16-Feb</th>
+            <th>23-Feb</th>
+            <th>2-Mar</th>
+            <th>9-Mar</th>
+            <th>16-Mar</th>
+            <th>23-Mar</th>		
+
+        <tr>
+            <th>1</th>
+            <th>5520124037</th>
+            <th>Acep</th>
+            <th>v</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>				   
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>5520124038</th>
+            <th>Dude</th>
+            <th>v</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>	
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>5520124039</th>
+            <th>Fly</th>
+            <th>v</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>	            
+        </tr>
+    </table>
+
+<p align = "center" style="font-size: 25px; font-weight: bold; padding: 10px; margin:auto;"> Form Mahasiswa </p>
+           
+
+
+	<form align="center" style="width:40%; margin:auto;">
+		<fieldset style="text-align:left;">
+			<legend>Data Mahasiswa</legend>
+				Nama 		: <input type="text" style="width:150px; height:10px;"><br>
+				NPM 		: <input type="text" style="width:150px; height:10px;"><br>
+				Kelas 		: <select style= height:18px;">
+					<option>-</option>
+					<option>A</option>
+					<option>B</option>
+					<option>C</option>
+					</select><br>
+				Jenis Kelamin 	: 
+				<input type="radio" name="gender"> Pria
+				<input type="radio" name="gender"> Wanita
+		</fieldset>
+	</form>
+
+	<form align="center" style="width:40%; margin:auto;">
+		<fieldset style="text-align:left;">
+			<legend>Tempat Tinggal Mahasiswa</legend>
+				Alamat 			: <input type="text" style="width:150px; height:50px;"><br>
+				Kecamatan 		: <input type="text" style="width:150px; height:10px;"><br>
+				Kabupaten/Kotamadya 	: <input type="text" style="width:150px; height:10px;"><br>
+				Provinsi 		: <input type="text" style="width:150px; height:10px;"><br>
+				Kode pos 		: <input type="text" style="width:150px; height:10px;"><br>	
+		</fieldset>
+	</form>
+
+	<form align="center" style="width:40%; margin:auto;">
+		<fieldset style="text-align:left;">
+			<legend>Lain-lainnya</legend>
+				Bahasa pemprograman :<input type="checkbox" name="bahasa" value="C/C++"> C/C++
+   				<input type="checkbox" name="bahasa" value="Java"> Java
+    				<input type="checkbox" name="bahasa" value="Python"> Python
+	    			<input type="checkbox" name="bahasa" value="Lainnya"> Lainnya<br>
+				<input type="checkbox" name="bahasa" value="PHP"> PHP
+    				<input type="checkbox" name="bahasa" value="Javascript"> Javascript
+	    			<input type="checkbox" name="bahasa" value="Ruby"> Ruby<br>
+
+				Kegiatan :<input type="checkbox" name="kegiatan" value="Organisasi kemahasiswaan"> Organisasi kemahasiswaan
+				<input type="checkbox" name="kegiatan" value="Organisasi kesehatan"> Organisasi kesehatan
+	    			<input type="checkbox" name="kegiatan" value="Lainnya"> Lainnya<br>
+				<input type="checkbox" name="kegiatan" value="Organisasi di luar kampus"> Organisasi di luar kampus
+    				<input type="checkbox" name="kegiatan" value="Bidang seni"> Bidang seni <br>					
+		</fieldset>
+	</form>
+
+
+</body>
+</html>
+
+
+
+
