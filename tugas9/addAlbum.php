@@ -45,20 +45,15 @@ $album = new Album();
             $nama_penyanyi  = $_POST['nama_penyanyi'];
             $tahun_rilis    = $_POST['tahun_rilis'];
 
-            // Upload
             $fileName = $_FILES['cover']['name'];
             $tmpName  = $_FILES['cover']['tmp_name'];
 
-            // Rename biar unik
             $newName = time() . "_" . rand(1000, 9999) . "_" . $fileName;
 
-            // Folder
             $uploadPath = "images/" . $newName;
 
-            // Pindahkan file
             if (move_uploaded_file($tmpName, $uploadPath)) {
 
-                // Data ke DB
                 $data = [
                     "nama_album"    => $nama_album,
                     "nama_penyanyi" => $nama_penyanyi,
@@ -87,4 +82,5 @@ $album = new Album();
 
 </body>
 </html>
+
 
