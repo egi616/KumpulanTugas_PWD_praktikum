@@ -49,7 +49,6 @@ $data = $album->getAlbumById($id_album);
             $nama_penyanyi  = $_POST['nama_penyanyi'];
             $tahun_rilis    = $_POST['tahun_rilis'];
 
-            // Cek jika ada file baru
             if (!empty($_FILES['cover']['name'])) {
 
                 $fileName = $_FILES['cover']['name'];
@@ -82,4 +81,5 @@ $data = $album->getAlbumById($id_album);
 
 </body>
 </html>
+
 
